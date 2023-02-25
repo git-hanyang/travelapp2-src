@@ -15,7 +15,7 @@ function PlannerCards(data) {
   function handleDelete(e) {
     //console.log(data.data._id)
     axios({
-      url: `http://localhost:3003/api/planner/${data.data._id}`,
+      url: `https://travelapp2u-api.onrender.com/api/planner/${data.data._id}`,
       method: "delete",
     }).then((res) => {
         console.log(count)

@@ -42,7 +42,7 @@ export default function Dashboard() {
     const token = Cookies.get('jwt')
     // console.log(token)
     axios({
-      url: `http://localhost:3003/api/planner`,
+      url: `https://travelapp2u-api.onrender.com/api/planner`,
       method: "get",
       headers:{
         Authorization:`Bearer ${token}`

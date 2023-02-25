@@ -32,7 +32,7 @@ const Login = () => {
     }
     
     axios({  
-      url:"http://localhost:3003/user/verify",
+      url:"https://travelapp2u-api.onrender.com/user/verify",
       method:"post",
       data:user,
       withCredentials:true,

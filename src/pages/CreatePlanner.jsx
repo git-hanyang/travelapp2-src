@@ -80,7 +80,7 @@ export default function CreatePlanner() {
     e.preventDefault();
     const token = Cookies.get('jwt')
     axios({
-      url: "http://localhost:3003/api/planner",
+      url: "https://travelapp2u-api.onrender.com/api/planner",
       method: "post",
       data: addPlannerData,
       headers:{

@@ -33,7 +33,7 @@ const Register =() =>{
     console.log(userData)
      e.preventDefault();
       axios({
-        url: "http://localhost:3003/user/add",
+        url: "https://travelapp2u-api.onrender.com/user/add",
         method: "post",
         data: { username: userData.username, password: userData.password }
       })

@@ -61,7 +61,7 @@ export default function PlannerDetails() {
     function fetchThisPlannerData(){
       axios({
         
-        url: `http://localhost:3003/api/planner/${_id}`,
+        url: `https://travelapp2u-api.onrender.com/api/planner/${_id}`,
         method: 'get',
         headers: {
             Authorization:"Bearer "+token
@@ -88,7 +88,7 @@ export default function PlannerDetails() {
       }
       
       axios({
-        url:`http://localhost:3003/api/planner/${_id}`,
+        url:`https://travelapp2u-api.onrender.com/api/planner/${_id}`,
         method:'put',
         data:addPlannerData,
         headers: {
