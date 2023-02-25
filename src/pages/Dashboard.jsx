@@ -40,7 +40,7 @@ export default function Dashboard() {
 
   function fetchPlannerData() {
     const token = Cookies.get('jwt')
-    // console.log(token)
+    console.log(token)
     axios({
       url: `https://travelapp2u-api.onrender.com/api/planner`,
       method: "get",
