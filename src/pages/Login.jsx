@@ -38,10 +38,11 @@ const Login = () => {
       withCredentials:true,
     })
       .then(()=>{
-        navigate('/dashboard')
+        //navigate('/dashboard')
+        console.log(user)
       })
       .catch((err) => {
-        console.log(err.message)
+        console.log(err)
       });
   }
 

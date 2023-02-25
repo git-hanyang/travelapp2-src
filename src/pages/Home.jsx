@@ -33,7 +33,7 @@ export default function Home() {
           :
           <>
           <div className="d-flex gap-2">
-            <LinkContainer to="/register">
+            <LinkContainer to="/signup">
               <Button className="px-4" size="lg" variant="primary">
                 Sign Up
               </Button>
