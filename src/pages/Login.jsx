@@ -14,11 +14,13 @@ import {
 import axios from "axios";
 import { CurrentUserDetail } from "../PlannerContext";
 import { Cookies } from "react-cookie";
+import { LoginStatus } from "../PlannerContext";
 
 
 
 const Login = () => {
-  
+  const [isLoggedIn,setLoggedIn]= useContext(LoginStatus);
+
   const navigate = useNavigate();
   const usernameRef= useRef()
   const passwordRef=useRef()
@@ -38,6 +40,7 @@ const Login = () => {
       withCredentials:true,
     })
       .then(()=>{
+        setLoggedIn(true)
         navigate('/dashboard')
         //console.log(user)
       })
