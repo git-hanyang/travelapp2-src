@@ -12,8 +12,6 @@ import {
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import axios from "axios";
-import { CurrentUserDetail } from "../PlannerContext";
-import { Cookies } from "react-cookie";
 import { LoginStatus } from "../PlannerContext";
 
 
@@ -34,7 +32,7 @@ const Login = () => {
     }
     
     axios({  
-      url:"https://travelapp2u-api.onrender.com/user/verify",
+      url:"http://localhost:3003/user/verify",
       method:"post",
       data:user,
       withCredentials:true,

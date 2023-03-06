@@ -61,7 +61,7 @@ export default function PlannerDetails() {
     function fetchThisPlannerData(){
       axios({
         
-        url: `https://travelapp2u-api.onrender.com/api/planner/${_id}`,
+        url: `http://localhost:3003/api/planner/${_id}`,
         method: 'get',
         headers: {
             Authorization:"Bearer "+token

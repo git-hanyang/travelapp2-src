@@ -40,9 +40,9 @@ export default function Dashboard() {
 
   function fetchPlannerData() {
     const token = Cookies.get('jwt')
-    console.log(token)
+    
     axios({
-      url: `https://travelapp2u-api.onrender.com/api/planner`,
+      url: `http://localhost:3003/api/planner`,
       method: "get",
       headers:{
         Authorization:`Bearer ${token}`
@@ -79,7 +79,7 @@ export default function Dashboard() {
       className="flex-fill "
     >
     <br />
-      <h2>Dashboard</h2>
+      <h2>Dashboard {console.log(Cookies.get('jwt'))}</h2>
   
         <Container
           fluid={true}
